@@ -7,9 +7,10 @@ specific object / method() / variable to modify its data items value.
 rules for declaration and initialization of the constant variables:
 const  datatype  name = value ;
 Example:
+```
 // C++ program to demonstrate the
 // the above concept
-`#include <iostream>
+#include <iostream>
 using namespace std;
 
 // Driver Code
@@ -20,16 +21,19 @@ int main()
     // x = 9;   CTE error
     const int y = 10;
     cout << y;
-}`
+}
+```
+```ruby
 output: 10
-
+```
 
 2)const keyword with pointer variables:
 there are 3 possible ways to use  const keyword with pointer
 a)when the pointer variable point to a const value:
 syntax: const datatype* var_name ;
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 // Driver Code
@@ -53,14 +57,17 @@ int main()
     // *j = 7;
  
     cout << *i << " " << *j;
-}`
+}
+```
+```ruby
 output: 9 A
-
+```
 
 b)when the const pointer variable point to the value:
 syntax: datatype* const var_name ;
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 // Driver Code
@@ -100,15 +107,18 @@ int z = 6;
         << endl;
     cout << i << " and " << j;
 
-}`
+}
+```
+```ruby
 output:
 9 and M
 0x7ffd1ff8f830 and MC
-
+```
 c)when const pointer pointing to const variable:
 syntax: const datatype* const var_name ;
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 // Driver code
@@ -136,24 +146,29 @@ int x= 9 ;
  
     cout << *i << " and " << *j;
 
-}`
+}
+```
+```ruby
 output: 9 and A
-
+```
 
 3)constant methods:
 syntax: const  class_name  object_name ;
 there are 2 ways of constant function declaration:
+```ruby
 ordinary  const-function declaration:                           A const member function of the class:
 const void foo(){                                               class {
 // void foo()  const Not valid                                   void foo() const
 }                                                                {//...........
 int main(){                                                         }
 foo(x); }                                                           }
+```
 
 constant function parameters and return type:
 a) for parameters:
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 // Function foo() with variable
@@ -182,15 +197,19 @@ const int z = 10;
 
     foo(z);
     foo1(x);
-}`
+}
+```
+```ruby
 output:
 10
 5
+```
 
 
 b)for return type:
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 const int foo(int y)
@@ -207,15 +226,18 @@ cout << foo(x) << '\n'
 << foo(z);
 
     
-}`
+}
+```
+```
 output:
 8
 9
-
+```
 
 c)for const parameters and const return type:
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 
 const int foo(const int y)
@@ -233,16 +255,20 @@ int x = 9;
 const int z = 10;
 cout << foo(x) << '\n'
 << foo(z);
-}`
+}
+```
+```
 output:
 9
 10
+```
 
 4)Defining class Data members as const:
 These are data variables in class which are defined using const keyword. They are not initialized during declaration. 
 Their initialization is done in the constructor.
 Example:
-`class Test
+```
+class Test
 {
 const int i;
 public:
@@ -256,7 +282,8 @@ int main()
 {
 Test t(10);
 Test s(20);
-}`
+}
+```
 
 
 5)Defining class object as const:
@@ -268,7 +295,8 @@ syntax: const class_name object;
 A const member functions never modifies data members in an object.
 syntax: return_type function_name() const;
 Example:
-`class StarWars
+```
+class StarWars
 {
 public:
 int i;
@@ -304,7 +332,8 @@ const StarWars objTwo(20);      // const object
 
     objOne.gamma();     // No error
     objTwo.gamma();     // Compile time error
-}`
+}
+```
 
 List all possible usage of & operator:
 The & symbol is used as an operator in c++ . It is used in 2 different places , one as a bitwise and operator and one as
@@ -345,7 +374,7 @@ int main()
            cout<<"value of ptr:"<<ptr<<endl;
            cout<<"value of val:"<<val<<endl;
     }
-    ```
+ ```
  ```
 Output:
 value of var:3000

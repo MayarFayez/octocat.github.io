@@ -4,8 +4,11 @@ const keyword is attached with any method(),variable,pointer variable,and with t
 specific object / method() / variable to modify its data items value.
 
 1)constant variables:
+
 rules for declaration and initialization of the constant variables:
+
 const  datatype  name = value ;
+
 Example:
 ```
 // C++ program to demonstrate the
@@ -28,9 +31,13 @@ output: 10
 ```
 
 2)const keyword with pointer variables:
+
 there are 3 possible ways to use  const keyword with pointer
+
 a)when the pointer variable point to a const value:
+
 syntax: const datatype* var_name ;
+
 Example:
 ```
 #include <iostream>
@@ -64,7 +71,9 @@ output: 9 A
 ```
 
 b)when the const pointer variable point to the value:
+
 syntax: datatype* const var_name ;
+
 Example:
 ```
 #include <iostream>
@@ -115,7 +124,9 @@ output:
 0x7ffd1ff8f830 and MC
 ```
 c)when const pointer pointing to const variable:
+
 syntax: const datatype* const var_name ;
+
 Example:
 ```
 #include <iostream>
@@ -153,7 +164,9 @@ output: 9 and A
 ```
 
 3)constant methods:
+
 syntax: const  class_name  object_name ;
+
 there are 2 ways of constant function declaration:
 ```ruby
 ordinary  const-function declaration:                           A const member function of the class:
@@ -165,7 +178,9 @@ foo(x); }                                                           }
 ```
 
 constant function parameters and return type:
+
 a) for parameters:
+
 Example:
 ```
 #include <iostream>
@@ -207,6 +222,7 @@ output:
 
 
 b)for return type:
+
 Example:
 ```
 #include <iostream>
@@ -235,6 +251,7 @@ output:
 ```
 
 c)for const parameters and const return type:
+
 Example:
 ```
 #include <iostream>
@@ -264,8 +281,10 @@ output:
 ```
 
 4)Defining class Data members as const:
+
 These are data variables in class which are defined using const keyword. They are not initialized during declaration. 
 Their initialization is done in the constructor.
+
 Example:
 ```
 class Test
@@ -294,8 +313,11 @@ syntax: const class_name object;
 
 
 6)Defining class's member function as const:
+
 A const member functions never modifies data members in an object.
+
 syntax: return_type function_name() const;
+
 Example:
 ```
 class StarWars
@@ -338,13 +360,16 @@ const StarWars objTwo(20);      // const object
 ```
 
 List all possible usage of & operator:
+
 The & symbol is used as an operator in c++ . It is used in 2 different places , one as a bitwise and operator and one as
 a pointer address of operator.
 
 Bitwise AND (&):
+
 compares each bit of the first operand to that bit of the second operand. 
 if both bits are 1, the bit is set to 1.otherwise,the bit is set to 0.
 Both operands to the bitwise AND operator must be of integral types .
+
 Example:
 ```
 #include <iostream>
@@ -359,8 +384,10 @@ cout<<hex<<(a&b)<< endl;
 Output:   0
 ```
 Address of operator:
+
 The address of operator(&), and it is the complement of * .it is  a unary operator that returns the address of the 
 variable(r_value)specified by its operand.
+
 Example:
 ```
 #include <iostream>

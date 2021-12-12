@@ -288,7 +288,9 @@ Test s(20);
 
 5)Defining class object as const:
 syntax: const class_name object;
+```
  const Test r(30);                              //following the previous example
+ ```
 
 
 6)Defining class's member function as const:

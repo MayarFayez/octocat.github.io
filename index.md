@@ -315,21 +315,24 @@ compares each bit of the first operand to that bit of the second operand.
 if both bits are 1, the bit is set to 1.otherwise,the bit is set to 0.
 Both operands to the bitwise AND operator must be of integral types .
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 int main(){
 unsigned short a=0x5555;  //pattern 0101....
 unsigned short b=0xAAAA;  //pattern 1010....
 cout<<hex<<(a&b)<< endl;
-}`
-
+} 
+```
+```
 Output:   0
-
+```
 Address of operator:
 The address of operator(&), and it is the complement of * .it is  a unary operator that returns the address of the 
 variable(r_value)specified by its operand.
 Example:
-`#include <iostream>
+```
+#include <iostream>
 using namespace std;
 int main()
            { int var;
@@ -341,9 +344,11 @@ int main()
            cout<<"value of var:"<<var<<endl;
            cout<<"value of ptr:"<<ptr<<endl;
            cout<<"value of val:"<<val<<endl;
-    }`
-
+    }
+    ```
+ ```
 Output:
 value of var:3000
 value of ptr:0xbff64494
 value of val:3000
+```

@@ -26,8 +26,9 @@ int main()
     cout << y;
 }
 ```
+output:
 ```ruby
-output: 10
+ 10
 ```
 
 2)const keyword with pointer variables:
@@ -66,8 +67,9 @@ int main()
     cout << *i << " " << *j;
 }
 ```
+output:
 ```ruby
-output: 9 A
+9 A
 ```
 
 b)when the const pointer variable point to the value:
@@ -118,8 +120,8 @@ int z = 6;
 
 }
 ```
-```ruby
 output:
+```ruby
 9 and M
 0x7ffd1ff8f830 and MC
 ```
@@ -159,8 +161,9 @@ int x= 9 ;
 
 }
 ```
+output:
 ```ruby
-output: 9 and A
+ 9 and A
 ```
 
 3)constant methods:
@@ -214,8 +217,8 @@ const int z = 10;
     foo1(x);
 }
 ```
-```ruby
 output:
+```ruby
 10
 5
 ```
@@ -244,8 +247,8 @@ cout << foo(x) << '\n'
     
 }
 ```
-```
 output:
+```
 8
 9
 ```
@@ -274,8 +277,8 @@ cout << foo(x) << '\n'
 << foo(z);
 }
 ```
-```
 output:
+```
 9
 10
 ```
@@ -380,8 +383,9 @@ unsigned short b=0xAAAA;  //pattern 1010....
 cout<<hex<<(a&b)<< endl;
 } 
 ```
+output:
 ```
-Output:   0
+   0
 ```
 Address of operator:
 
@@ -404,8 +408,8 @@ int main()
            cout<<"value of val:"<<val<<endl;
     }
  ```
+ output:
  ```
-Output:
 value of var:3000
 value of ptr:0xbff64494
 value of val:3000
